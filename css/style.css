@@ -57,6 +57,11 @@ header .container {
   letter-spacing: -1px;
   position: relative;
 }
+@media(min-width: 1200px){
+  header .container {
+    height: 120px;
+  }
+}
 header .logo {
   display: flex;
   align-items: center;
@@ -117,7 +122,7 @@ header .logo h1 {
   }
   header .nav-links ul {
     display: flex;
-    margin-left: 20px;
+    margin-left: 35px;
   }
 
   header .nav-links ul li {
@@ -419,25 +424,30 @@ header .cart-avatar .cart .cart-num {
 @media (min-width: 992px) {
   .content .container {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
   }
   .content .product-images {
     flex-direction: column;
     align-items: center;
-    width: 48%;
+    width: 49%;
     padding-left: 30px;
   }
   .content .product-images .product-image {
-    width: 410px;
+    width: 430px;
   }
   .product-images .small-images {
     flex-direction: row;
-    width: 410px;
-    margin: 20px 0;
-    gap: 20px;
+    width: 430px;
+    margin: 25px 0;
+    gap: 30px;
   }
   .product-images .small-images .image-overlay {
     max-width: 86px;
+  }
+}
+@media(min-width: 1200px){
+  .content .container {
+      margin-top: 90px;
   }
 }
 /* Right-down-content */
@@ -455,6 +465,11 @@ header .cart-avatar .cart .cart-num {
   font-size: 30px;
   font-weight: 700;
   margin: 15px 0;
+}
+@media(min-width: 1200px){
+  .content .product-desc .prod-limt {
+    font-size: 36px;
+  }
 }
 .content .product-desc .prod-des {
   font-size: 16px;
@@ -493,7 +508,7 @@ header .cart-avatar .cart .cart-num {
   justify-content: space-between;
   background-color: #f0efef;
   border-radius: 6px;
-  padding: 5px 15px;
+  padding: 8px 15px;
   width: 100%;
 }
 .add-cart .quantity .minus,
@@ -519,7 +534,7 @@ header .cart-avatar .cart .cart-num {
   font-weight: 500;
   cursor: pointer;
   width: 100%;
-  padding: 14px 0;
+  padding: 16px 0;
   margin-top: 15px;
 }
 .product-desc .add-cart .add-btn img {
@@ -534,9 +549,10 @@ header .cart-avatar .cart .cart-num {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-left: 20px;
   }
   .product-desc .add-cart .quantity {
-    width: 48%;
+    width: 49%;
   }
   .product-desc .add-cart .add-btn {
     width: 48%;
@@ -545,7 +561,7 @@ header .cart-avatar .cart .cart-num {
 }
 @media (min-width: 992px) {
   .content .product-desc {
-    width: 48%;
+    width: 46%;
     padding: 40px 20px;
     margin-top: 20px;
   }
@@ -690,4 +706,5 @@ header .cart-avatar .cart .cart-num {
 div.attribution{
   margin: 10px auto;
   width: fit-content;
+  padding: 15px;
 }
