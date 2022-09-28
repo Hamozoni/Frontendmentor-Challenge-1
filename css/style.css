@@ -156,6 +156,11 @@ header .logo h1 {
     height: 3px;
   }
 }
+@media(min-width: 1200px){
+    header .nav-links ul li a:hover::before {
+        bottom: -45px;
+     }
+  }
 /* End-minu-nav */
 header .cart-avatar {
   display: flex;
